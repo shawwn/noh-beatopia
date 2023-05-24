@@ -3,9 +3,24 @@
 
     <style name="h1" color="#3abde7" font="dyn_12" shadow="true" />
 
-<panel color="0 0 0 .8" onclick="fadeout(500);">
-    <image align="center" valign="center" height="360" width="537" texture="images/logo.jpg" noclick="1"/>
-</panel>
-    
+    <panel color="0 0 0 .8" onclick="fadeout(500);">
+        <image align="center" valign="center" height="360" width="537" texture="images/logo.jpg" noclick="1"/>
+        <animatedimage
+                name="animated_shop_sign"
+                onmouseover="StartAnim();"
+                onclick="StartAnim(); Cmd('Start');"
+                onshow="StartAnim();"
+                height="4.5h"
+                width="4.5h"
+                x="100"
+                y="500"
+                valign="top"
+                align="center"
+                fps="19.167"
+                loop="true"
+                loopbackframe="-1"
+                texture="common/sign/sign.tga" />
+    </panel>
+
 </interface>
 
